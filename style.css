@@ -1,0 +1,55 @@
+body{
+    background:#361999;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+}
+.main{
+    padding-bottom: 60px;
+}
+.icon i{
+    font-size: 53px;
+}
+.heading h2{
+    color:rgba(255, 255, 255, 0.356);
+}
+.btn-custom{
+    background:#361999;
+    color:#fff;
+}
+form{
+    background:#fff;padding:20px;
+    border-radius: 2px;
+}
+form label{
+    color:#000;
+    margin:6px 0px;
+}
+table{
+    border-radius: 1px;
+}
+.content{
+    background:#ffff;
+    padding:40px;
+}
+tr td a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.589);
+}
+.validation-error-message{
+    color:red;
+    display: none;
+}
+.validation-success-message{
+    color:green;
+    display: none;
+}
+blockquote{
+    border-left: 5px solid gray;
+    margin-top:15px;
+    font-weight: 500;
+    font-size: 14px;
+    text-indent: 10px;
+}
+a{
+    cursor: pointer;
+}

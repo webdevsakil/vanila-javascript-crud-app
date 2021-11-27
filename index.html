@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Builder</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="icon text-end mt-3 me-5">
+                    <i class="bi bi-book-half"></i>
+                </div>
+                <div class="heading">
+                    <h2 class="text-end">VocaBook</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <form action="#" onSubmit="event.preventDefault();onFormSubmit()">
+                        <fieldset>
+                            <div>
+                                <label for="word">New Word</label>
+                                <input type="text" placeholder="Add New Word" class="form-control" id="word">
+                            </div>
+                            <div>
+                                <label for="meaning">Meaning</label>
+                                <input type="text" placeholder="Enter Meaning of this word" class="form-control"
+                                    id="meaning">
+                            </div>
+                            <div>
+                                <label for="shortDesc">Short Description</label>
+                                <textarea placeholder="Enter Description of this word" class="form-control"
+                                    id="shortDesc"></textarea>
+                            </div>
+                            <blockquote class="validation-error-message">All field is required.</blockquote>
+                            <blockquote class="validation-success-message">You are successfully added.</blockquote>
+                            <button type="submit"  class="btn btn-custom mt-3" id="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <table class="table table-hover" id="allReports">
+                            <thead>
+                                <tr>
+                                    <th>Word</th>
+                                    <th>Word Meaning</th>
+                                    <th>Short Description</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Generate Report -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
